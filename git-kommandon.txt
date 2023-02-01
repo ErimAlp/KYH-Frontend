@@ -1,0 +1,9 @@
+Detta skriver du endast en gång när du börjar ett nytt projekt:
+git init
+git remote add origin https://github.com/yourusername/yourgithubrepository.git
+
+
+Detta skriver du varje gång du ska göra en sparning:
+git add .
+git commit -m "skriv ett meddelande om vad din commit gör"
+git push origin master
