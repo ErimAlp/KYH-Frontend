@@ -1,0 +1,36 @@
+.box {
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; */
+    
+}
+
+/* TABLETS */
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* DESKTOPS  (4:3 800p)*/
+@media(min-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
