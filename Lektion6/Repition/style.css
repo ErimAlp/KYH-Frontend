@@ -1,0 +1,27 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+/* #child {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+} */
+
+
+
+/* REPETITION 2 */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#child2 {
+    
+}

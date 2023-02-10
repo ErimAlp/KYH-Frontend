@@ -1,0 +1,35 @@
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    /* margin: 20px; */
+}
+
+.animate {
+    position: absolute;
+    animation: timeglass 5s infinite;
+}
+
+@keyframes slide{
+    0% {left: 0; }
+    100% {left: calc(100% - 90px);}
+}
+
+@keyframes slide-around {
+    0%       { left: 0; top: 0; }
+    25%      { left: calc(100% - 50px); top: 0;}
+    50%      { left: calc(100% - 50px); top: calc(100% - 50px); }
+    75%      { left: 0; top: calc(100% - 50px); }
+    100%     { left: 0; top: 0; }   
+}
+
+@keyframes timeglass {
+    0%          { left: 0; top: 0; background-color: aqua;}
+    16.6%      { left: calc(50% - 50px); top: calc(50% - 50px); }
+    33.26%      { left: calc(100% - 50px); top: 0; }
+    49.86%      { left: calc(100% - 50x); top: calc(100% - 50px); background-color:  lightcoral;}
+    66.40%      { left: calc(50% - 50px); top: calc(50% - 25px); }
+    83.65%      { left: 0; top: calc(100% - 50px); }
+    100%        { left: 0; top: 0; background-color: aquamarine;}
+}

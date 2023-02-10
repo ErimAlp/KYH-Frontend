@@ -1,0 +1,5 @@
+@keyframes bounce {
+    0%   { margin-top: 0; }
+    50%  { margin-top: -5; }
+    100% { margin-top: 0; }
+}
