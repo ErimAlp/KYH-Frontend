@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100px;
+    border: 1px solid gray;
+    background-color: bisque;
+    transition: all 40s;
+}
+
+.box:hover {
+    background-color: black;
+    color: #fff;
+    border: 1px solid red;
+    transform: rotate(122303deg);
+}
+
