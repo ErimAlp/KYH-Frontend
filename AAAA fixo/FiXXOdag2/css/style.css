@@ -4,28 +4,29 @@ html, body {
     font-family: 'Poppins', sans-serif;
     color: #222529;
 }
-header {
 
+/* SHOWCASE */
+.title-1 {
+font-size: 65px;
+font-weight: 900;
+line-height: 1;
+margin-bottom: 32px;
 }
-/* LOGO */
-header .logotype {
+
+.title-2 {
     font-size: 35px;
     font-weight: 700;
-}
-/* MENU LINKS */
-header .menu-links {
-
+    line-height: 1;
+    margin-bottom: 16px;
 }
 
-header .menu-links .menu-link {
-
+.title-3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 16px;
 }
 
-/* MENU ICONS */
-header .menu-link-icons {
-    
-}
-
-header .menu-link-icons .menu-link {
+.showcase {
 
 }
