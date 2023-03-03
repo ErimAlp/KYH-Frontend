@@ -10,34 +10,35 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Lektion11 - Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript Validation</title>
 </head>
 
 <body>
     <div class="center-screen">
         <div class="container">
+            <!-- <div class="title mb-3">ALOHA</div> -->
             <div class="row justify-content-center">
                 <div class="col col-sm-9 col-lg-7 col-xl-5">
                     <div class="card">
                         <div class="card-body">
-                            <form onsubmit="handleSubmit(event)">
+                            <form novalidate onsubmit="handleSubmit(event)">
                                 <div class="mb-3">
                                     <label for="">Förnamn</label>
-                                    <input value="Hans" type="text">
+                                    <input maxlength="20" onkeyup="validate(event)" type="text" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Efternamn</label>
-                                    <input value="Mattin-Lassei" type="text">
+                                    <input maxlength="20" onkeyup="validate(event)" type="text" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="">E-postadress</label>
-                                    <input value="hans@domain.com" type="email">
+                                    <input onkeyup="validate(event)" type="email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Lösenord</label>
                                     <div class="password-group">
-                                        <input id="password" value="BytMig123!" type="password">
+                                        <input id="password" onkeyup="validate(event)" type="password" required>
                                         <span id="toggle-password-icon" onclick="togglePassword()"><i
                                                 class="fa-regular fa-eye"></i></span>
                                     </div>
@@ -57,7 +58,7 @@
     </div>
 
 
-    <script defer src="validation.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 
 </html>
