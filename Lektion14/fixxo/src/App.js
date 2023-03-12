@@ -1,8 +1,10 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './views/Home';
 import Contact from './views/Contact';
 import Navigation from './components/Navigation';
+import { useProductContext } from './Contexts/ProductContext';
 
 function App() {
   const { getFeaturedAsync, getPopularAsync } = useProductContext()
@@ -26,15 +28,4 @@ function App() {
   );
 }
 
-
-
 export default App;
-
-
-
-// useState 	State Mannagement lagra data...
-// useEffect	"ServiceLifeTime" vid rendering av komponent
-// useContext 	typ som static class, singleton
-
-// useReducer	typ samma useContext fast mer advanced
-// useRef		typ samma useState 

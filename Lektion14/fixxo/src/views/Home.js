@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import FeaturedProducts from '../components/FeaturedProduct';
+import FeaturedProduct from '../components/FeaturedProduct';
 
 const Home = () => {
   const [user, setUser] = useState({})
@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <div className="container mt-4">
-      <FeaturedProducts />
+      <FeaturedProduct />
 
       <input type="text" id="firstName" required onChange={handleUserChange} className="form-control mb-3" />
       <input type="text" id="lastName" onChange={handleUserChange} className="form-control mb-3" />
